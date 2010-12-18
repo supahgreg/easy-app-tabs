@@ -7,7 +7,7 @@
     <name>Easy App Tabs</name>
     <description>Allows you to double-click a tab to convert to/from an App Tab.</description>
     <homepageURL>http://github.com/supahgreg/easy-app-tabs</homepageURL>
-    <!--<iconURL>http://phob.net/easy.app.tab.png</iconURL>-->
+    <iconURL>http://phob.net/easy.app.tabs.png</iconURL>
     <version>1</version>
 
     <bootstrap>true</bootstrap>
