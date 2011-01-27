@@ -30,7 +30,10 @@ function main(win) {
   let tabBrowser = win.getBrowser();
 
   function bindTab(tab) {
-    listen(win, tab, "dblclick", function() {
+    listen(win, tab, "dblclick", function(e) {
+      // Only care about left-clicking
+      if (e.button !== 0) return;
+
       // Convert a tab to its opposite type (app->reg, reg->app)
       if (tab.pinned)
         tabBrowser.unpinTab(tab);
