@@ -35,6 +35,9 @@ function main(win) {
       // Only care about primary clicking
       if (e.button !== 0) return;
 
+      // No modifiers
+      if (e.ctrlKey || e.shiftKey || e.altKey || e.metaKey) return;
+
       // Convert a tab to its opposite type (app->reg, reg->app)
       if (tab.pinned)
         tabBrowser.unpinTab(tab);
