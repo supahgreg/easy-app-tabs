@@ -30,9 +30,25 @@ function main(win) {
   let tabBrowser = win.getBrowser();
 
   function bindTab(tab) {
+    // Double-click
     listen(win, tab, "dblclick", function(e) {
-      // Only care about left-clicking
+      // Only care about primary clicking
       if (e.button !== 0) return;
+
+      // Convert a tab to its opposite type (app->reg, reg->app)
+      if (tab.pinned)
+        tabBrowser.unpinTab(tab);
+      else
+        tabBrowser.pinTab(tab);
+    });
+
+    // Ctrl + primary click
+    listen(win, tab, "click", function(e) {
+      // Only care about primary clicking
+      if (e.button !== 0) return;
+
+      // Only allow ctrl
+      if (!e.ctrlKey || e.shiftKey || e.altKey || e.metaKey) return;
 
       // Convert a tab to its opposite type (app->reg, reg->app)
       if (tab.pinned)
