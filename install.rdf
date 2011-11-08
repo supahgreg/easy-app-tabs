@@ -7,7 +7,7 @@
     <name>Easy App Tabs</name>
     <description>Allows you to double-click a tab to convert to/from an App Tab.</description>
     <homepageURL>http://github.com/supahgreg/easy-app-tabs</homepageURL>
-    <version>4</version>
+    <version>5</version>
 
     <bootstrap>true</bootstrap>
     <type>2</type>
@@ -20,7 +20,7 @@
       <r:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
         <minVersion>4.0b4</minVersion>
-        <maxVersion>7.0a1</maxVersion>
+        <maxVersion>10.0a1</maxVersion>
       </r:Description>
     </targetApplication>
   </r:Description>
