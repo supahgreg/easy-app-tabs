@@ -38,6 +38,10 @@ function main(win) {
       // No modifiers
       if (e.ctrlKey || e.shiftKey || e.altKey || e.metaKey) return;
 
+      // Don't convert if the "double-click" was on a close button
+      if (e.originalTarget.classList.contains("tab-close-button"))
+        return tabBrowser.removeCurrentTab({animate: true});
+
       // Convert a tab to its opposite type (app->reg, reg->app)
       if (tab.pinned)
         tabBrowser.unpinTab(tab);
