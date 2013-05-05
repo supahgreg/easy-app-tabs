@@ -40,7 +40,7 @@ function main(win) {
 
       // Don't convert if the "double-click" was on a close button
       if (e.originalTarget.classList.contains("tab-close-button"))
-        return tabBrowser.removeCurrentTab({animate: true});
+        return tabBrowser.removeTab(tab, {animate: true, byMouse: true});
 
       // Convert a tab to its opposite type (app->reg, reg->app)
       if (tab.pinned)
