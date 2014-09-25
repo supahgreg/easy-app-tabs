@@ -1,0 +1,14 @@
+{
+  "name": "easy-app-tabs",
+  "title": "Easy App Tabs",
+  "id": "easy.app.tabs@phob.net",
+  "description": "Allows you to double-click a tab to convert to/from an App Tab.",
+  "author": "Greg Parris",
+  "version": "7",
+  "homepage": "http://github.com/supahgreg/easy-app-tabs",
+  "contributors": [
+    "Edward Lee (http://ed.agadak.net/)",
+    "Erik Vold (http://erikvold.com/)",
+    "Tim Taubert (http://timtaubert.de/)"
+  ]
+}
