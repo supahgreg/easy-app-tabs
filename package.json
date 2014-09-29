@@ -6,6 +6,9 @@
   "author": "Greg Parris",
   "version": "7",
   "homepage": "http://github.com/supahgreg/easy-app-tabs",
+  "permissions": {
+    "private-browsing": true
+  },
   "contributors": [
     "Edward Lee (http://ed.agadak.net/)",
     "Erik Vold (http://erikvold.com/)",
